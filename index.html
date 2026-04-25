@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ім'я Художника — Живопис та акварель</title>
+<meta name="description" content="Портфоліо художника. Роботи в техніці акварелі та живопису — краєвиди, етюди, абстракція.">
+
+<!-- Open Graph (Facebook, Instagram, Telegram, Viber) -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://your-username.github.io/">
+<meta property="og:title"       content="Ім'я Художника — Живопис та акварель">
+<meta property="og:description" content="Портфоліо художника. Роботи в техніці акварелі та живопису — краєвиди, етюди, абстракція.">
+<meta property="og:image"       content="https://your-username.github.io/og-image.jpg">
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale"      content="uk_UA">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="Ім'я Художника — Живопис та акварель">
+<meta name="twitter:description" content="Портфоліо художника. Роботи в техніці акварелі та живопису — краєвиди, етюди, абстракція.">
+<meta name="twitter:image"       content="https://your-username.github.io/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23FAF8F4'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23B8977A'>А</text></svg>">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #FAF8F4;
+    --warm-white: #F5F2EC;
+    --ink: #1C1A17;
+    --ink-soft: #4A4540;
+    --ink-muted: #8C857C;
+    --accent: #B8977A;
+    --accent-light: #E8DDD2;
+    --border: rgba(28,26,23,0.1);
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Jost', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(250,248,244,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: padding 0.3s ease;
+  }
+
+  .nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--accent); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  .hero-text {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    color: var(--ink-muted);
+    max-width: 340px;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+  }
+
+  .btn {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    transition: all 0.25s ease;
+  }
+
+  .btn:hover {
+    background: var(--ink);
+    color: var(--cream);
+  }
+
+  .btn-outline {
+    border-color: var(--accent);
+    color: var(--accent);
+    margin-left: 1rem;
+  }
+
+  .btn-outline:hover {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  .hero-image {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(160deg, #E8DDD2 0%, #D4C4B0 50%, #C9B89A 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-placeholder svg {
+    opacity: 0.35;
+  }
+
+  .hero-placeholder span {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    opacity: 0.6;
+  }
+
+  /* ── SECTION HEADERS ── */
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-label {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+
+  .section-title em { font-style: italic; }
+
+  /* ── GALLERY ── */
+  .gallery-section {
+    padding: 7rem 3rem;
+    background: var(--warm-white);
+  }
+
+  .category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 3.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.75rem 1.75rem;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: -1px;
+  }
+
+  .tab-btn.active {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+  }
+
+  .tab-btn:hover:not(.active) { color: var(--ink-soft); }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .gallery-item.hidden { display: none; }
+
+  .gallery-thumb {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+  }
+
+  .gallery-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: transform 0.6s ease;
+  }
+
+  .gp-1 { background: #E0D5C8; }
+  .gp-2 { background: #D4C9BB; }
+  .gp-3 { background: #C8BCAD; }
+  .gp-4 { background: #E5DDD4; }
+  .gp-5 { background: #DAD0C5; }
+  .gp-6 { background: #CFC3B5; }
+  .gp-7 { background: #D8D2C6; }
+  .gp-8 { background: #E2DDD6; }
+  .gp-9 { background: #CBB9A5; }
+
+  .gallery-item:hover .gallery-placeholder,
+  .gallery-item:hover .gallery-thumb { transform: scale(1.04); }
+
+  .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(28,26,23,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    transition: background 0.3s ease;
+  }
+
+  .gallery-item:hover .gallery-overlay { background: rgba(28,26,23,0.45); }
+
+  .gallery-info {
+    transform: translateY(8px);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .gallery-item:hover .gallery-info {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .gallery-info h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0.25rem;
+  }
+
+  .gallery-info span {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ── PAGINATION ── */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .page-btn {
+    background: none;
+    border: 1px solid var(--border);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--ink-muted);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.05em;
+  }
+
+  .page-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .page-btn.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--cream);
+  }
+
+  .page-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  .page-btn.arrow {
+    font-size: 1rem;
+    color: var(--ink-soft);
+  }
+
+  .page-info {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin: 0 0.5rem;
+  }
+
+  /* Grid fade transition */
+  .gallery-grid {
+    transition: opacity 0.3s ease;
+  }
+  .gallery-grid.fading {
+    opacity: 0;
+  }
+
+  /* ── ABOUT ── */
+  .about-section {
+    padding: 7rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-image-wrap {
+    position: relative;
+  }
+
+  .about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-placeholder {
+    width: 100%;
+    aspect-ratio: 4/5;
+    background: linear-gradient(150deg, #DDD3C8 0%, #C8B9A8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-placeholder svg { opacity: 0.3; }
+
+  .about-accent-line {
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    width: 50%;
+    height: 50%;
+    border-top: 1px solid var(--accent);
+    border-left: 1px solid var(--accent);
+    pointer-events: none;
+  }
+
+  .about-content .section-label { text-align: left; }
+
+  .about-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 1.75rem;
+  }
+
+  .about-title em { font-style: italic; color: var(--accent); }
+
+  .about-text {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-bottom: 1rem;
+    line-height: 1.85;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.35rem;
+  }
+
+  .stat-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  /* ── CONTACT ── */
+  .contact-section {
+    padding: 7rem 3rem;
+    background: var(--ink);
+    color: var(--cream);
+  }
+
+  .contact-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-section .section-label { color: var(--accent); }
+
+  .contact-section .section-title { color: var(--cream); }
+
+  .contact-sub {
+    color: rgba(250,248,244,0.55);
+    font-size: 0.95rem;
+    margin: 1.5rem 0 3rem;
+    line-height: 1.8;
+  }
+
+  .contact-email {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: var(--cream);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 0.2rem;
+    transition: color 0.2s;
+    display: inline-block;
+    margin-bottom: 3.5rem;
+  }
+
+  .contact-email:hover { color: var(--accent); }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(250,248,244,0.45);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .social-links a:hover { color: var(--accent); }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 2rem 3rem;
+    background: var(--ink);
+    border-top: 1px solid rgba(250,248,244,0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: rgba(250,248,244,0.25);
+  }
+
+  /* ── LIGHTBOX ── */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(28,26,23,0.95);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .lightbox.active { display: flex; }
+
+  .lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.6);
+    width: 44px; height: 44px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .lightbox-close:hover { border-color: rgba(255,255,255,0.6); color: #fff; }
+
+  .lightbox-content {
+    max-width: 600px;
+    max-height: 85vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  .lightbox-img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .lightbox-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    max-height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox-caption {
+    margin-top: 1.5rem;
+  }
+
+  .lightbox-caption h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+
+  .lightbox-caption span {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  /* ── PRELOADER ── */
+  #preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+  }
+
+  #preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .preloader-logo {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    opacity: 0;
+    animation: preloaderFadeIn 0.5s ease 0.1s forwards;
+  }
+
+  .preloader-line {
+    width: 60px;
+    height: 1px;
+    background: var(--accent-light);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .preloader-line::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--accent);
+    transform: translateX(-100%);
+    animation: preloaderSlide 1.1s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+  }
+
+  @keyframes preloaderFadeIn {
+    to { opacity: 1; }
+  }
+
+  @keyframes preloaderSlide {
+    to { transform: translateX(0); }
+  }
+
+  /* блокуємо hero-анімації поки є прелоадер */
+  body.loading .fade-up {
+    animation: none;
+    opacity: 0;
+  }
+
+  /* ── ACTIVE NAV ── */
+  .nav-links a.active {
+    color: var(--accent);
+  }
+
+  /* ── LANG SWITCHER ── */
+  .lang-switcher {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    border: 1px solid var(--border);
+  }
+
+  .lang-btn {
+    background: none;
+    border: none;
+    border-right: 1px solid var(--border);
+    padding: 0.35rem 0.6rem;
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 1;
+  }
+
+  .lang-btn:last-child { border-right: none; }
+  .lang-btn:hover { color: var(--ink); }
+  .lang-btn.active { color: var(--ink); background: var(--accent-light); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-up {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+  }
+
+  .hero-eyebrow { animation-delay: 0.1s; }
+  .hero-title   { animation-delay: 0.25s; }
+  .hero-sub     { animation-delay: 0.4s; }
+  .hero-cta     { animation-delay: 0.55s; }
+
+  /* ── BACK TO TOP ── */
+  #back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 90;
+    width: 44px;
+    height: 44px;
+    background: var(--ink);
+    border: none;
+    color: var(--cream);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s;
+    pointer-events: none;
+  }
+
+  #back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  #back-to-top:hover { background: var(--accent); }
+
+  #back-to-top svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ── WORK PAGE ── */
+  #work-page {
+    display: none;
+    min-height: 100vh;
+    padding-top: 80px;
+    background: var(--cream);
+    animation: fadeUp 0.5s ease forwards;
+  }
+
+  #work-page.active { display: block; }
+
+  .work-page-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .work-page-image {
+    position: sticky;
+    top: 100px;
+    cursor: zoom-in;
+  }
+
+  .work-page-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(28,26,23,0);
+    transition: background 0.3s ease;
+    pointer-events: none;
+  }
+
+  .work-page-image:hover::after {
+    background: rgba(28,26,23,0.08);
+  }
+
+  .work-page-placeholder,
+  .work-page-img {
+    transition: transform 0.5s ease;
+  }
+
+  .work-page-image:hover .work-page-placeholder,
+  .work-page-image:hover .work-page-img {
+    transform: scale(1.02);
+  }
+
+  .work-page-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-page-img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+  }
+
+  .work-page-meta {
+    padding-top: 1rem;
+  }
+
+  .work-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-decoration: none;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    transition: color 0.2s;
+  }
+
+  .work-back:hover { color: var(--accent); }
+
+  .work-back svg {
+    width: 14px; height: 14px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.2s;
+  }
+
+  .work-back:hover svg { transform: translateX(-3px); }
+
+  .work-category {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .work-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 2rem;
+  }
+
+  .work-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+  }
+
+  .work-detail-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 0.25rem;
+  }
+
+  .work-detail-value {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  .work-description {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    line-height: 1.9;
+    margin-bottom: 2.5rem;
+  }
+
+  .work-nav {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .work-nav-btn {
+    flex: 1;
+    background: none;
+    border: 1px solid var(--border);
+    padding: 0.9rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .work-nav-btn:hover:not(:disabled) {
+    border-color: var(--ink);
+    color: var(--ink);
+  }
+
+  .work-nav-btn:disabled { opacity: 0.3; cursor: default; }
+
+  @media (max-width: 900px) {
+    .work-page-inner {
+      grid-template-columns: 1fr;
+      padding: 3rem 1.5rem;
+      gap: 2rem;
+    }
+    .work-page-image { position: static; }
+  }
+
+  /* ── BLOG ── */
+  .blog-section {
+    padding: 7rem 3rem;
+    background: var(--cream);
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .blog-card {
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .blog-card:hover { opacity: 0.7; }
+
+  .blog-card-tag {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.85rem;
+  }
+
+  .blog-card-title {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 300;
+    line-height: 1.25;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-card-excerpt {
+    font-size: 0.88rem;
+    color: var(--ink-muted);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .blog-card-meta {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  /* ── BLOG POST PAGE ── */
+  #post-page {
+    display: none;
+    min-height: 100vh;
+    padding-top: 80px;
+    background: var(--cream);
+    animation: fadeUp 0.5s ease forwards;
+  }
+
+  #post-page.active { display: block; }
+
+  .post-page-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+  }
+
+  .post-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    transition: color 0.2s;
+  }
+
+  .post-back:hover { color: var(--accent); }
+
+  .post-back svg {
+    width: 14px; height: 14px;
+    stroke: currentColor; fill: none;
+    stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+    transition: transform 0.2s;
+  }
+
+  .post-back:hover svg { transform: translateX(-3px); }
+
+  .post-tag {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .post-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 1rem;
+  }
+
+  .post-date {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    display: block;
+  }
+
+  .post-body {
+    font-size: 1rem;
+    color: var(--ink-soft);
+    line-height: 1.95;
+  }
+
+  .post-body p { margin-bottom: 1.5rem; }
+  .post-body p:last-child { margin-bottom: 0; }
+
+  @media (max-width: 900px) {
+    .blog-section { padding: 5rem 1.5rem; }
+    .blog-grid { grid-template-columns: 1fr; gap: 0; }
+    .blog-card { padding: 1.5rem 0; }
+    .post-page-inner { padding: 3rem 1.5rem; }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 1.25rem 1.5rem; }
+
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-image { height: 55vw; min-height: 280px; }
+    .hero-text { padding: 6rem 1.5rem 3rem; }
+
+    .gallery-section { padding: 5rem 1.5rem; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+
+    .about-section {
+      grid-template-columns: 1fr;
+      padding: 5rem 1.5rem;
+      gap: 3rem;
+    }
+
+    .contact-section { padding: 5rem 1.5rem; }
+
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+  }
+
+  @media (max-width: 500px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+    .nav-links { gap: 1.5rem; }
+    .about-stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  }
+</style>
+</head>
+<body class="loading">
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <span class="preloader-logo">Ім'я Художника</span>
+  <div class="preloader-line"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Ім'я Художника</a>
+  <ul class="nav-links">
+    <li><a href="#gallery" data-i18n="nav.gallery">Галерея</a></li>
+    <li><a href="#blog"    data-i18n="nav.blog">Блог</a></li>
+    <li><a href="#about"   data-i18n="nav.about">Про мене</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">Контакти</a></li>
+  </ul>
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="uk">УК</button>
+    <button class="lang-btn"        data-lang="en">EN</button>
+    <button class="lang-btn"        data-lang="de">DE</button>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div id="main-content">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-eyebrow fade-up" data-i18n="hero.eyebrow">Живопис · Акварель</p>
+    <h1 class="hero-title fade-up" data-i18n="hero.title">Мистецтво,<br>що <em>дихає</em><br>кольором</h1>
+    <p class="hero-sub fade-up" data-i18n="hero.sub">Роботи в техніці акварелі, що передають настрій, світло і тишу кожної миті.</p>
+    <div class="hero-cta fade-up">
+      <a href="#gallery" class="btn"         data-i18n="hero.cta1">Переглянути роботи</a>
+      <a href="#contact" class="btn btn-outline" data-i18n="hero.cta2">Зв'язатися</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="hero-placeholder">
+      <!-- Замініть цей блок на тег <img src="hero.jpg" alt="..."> -->
+       <img src="images/pages/pages_main.jpg" alt="...">
+      <!-- <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="60" height="60" rx="2" stroke="#4A4540" stroke-width="1.5" fill="none"/>
+        <path d="M10 50 L28 32 L42 46 L54 34 L70 50" stroke="#4A4540" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="24" cy="26" r="5" stroke="#4A4540" stroke-width="1.5" fill="none"/>
+      </svg> -->
+      <!-- <span>Ваше головне зображення</span> -->
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="section-header">
+    <span class="section-label" data-i18n="gallery.label">Роботи</span>
+    <h2 class="section-title" data-i18n="gallery.title">Галерея <em>мистецтва</em></h2>
+  </div>
+
+  <div class="category-tabs">
+    <button class="tab-btn active" data-cat="all"       data-i18n="cat.all">Усі</button>
+    <button class="tab-btn"        data-cat="watercolor" data-i18n="cat.watercolor">Акварель</button>
+    <button class="tab-btn"        data-cat="oil"        data-i18n="cat.oil">Масло</button>
+    <button class="tab-btn"        data-cat="graphics"   data-i18n="cat.graphics">Графіка</button>
+    <button class="tab-btn"        data-cat="other"      data-i18n="cat.other">Інше</button>
+  </div>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item" data-id="w1" data-cat="watercolor" data-title="Ранковий туман" data-year="2024">
+      <div class="gallery-placeholder gp-1">
+        <img class="gallery-img" src="images/arts/gallery/1_main.jpg" alt="Ранковий туман">
+      </div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Ранковий туман</h3><span>Акварель · 2024</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="o1" data-cat="oil" data-title="Спокій осені" data-year="2023">
+      <div class="gallery-placeholder gp-2">
+        <img class="gallery-img" src="images/arts/gallery/2_main.jpg" alt="Спокій осені">
+      </div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Спокій осені</h3><span>Масло · 2023</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="w2" data-cat="watercolor" data-title="Синій вечір" data-year="2024">
+      <div class="gallery-placeholder gp-3">
+        <img class="gallery-img" src="images/arts/gallery/3_main.jpg" alt="Синій вечір">
+      </div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Синій вечір</h3><span>Акварель · 2024</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="g1" data-cat="graphics" data-title="Лінія та форма" data-year="2023">
+      <div class="gallery-placeholder gp-4">
+        <img class="gallery-img" src="images/arts/gallery/4_main.jpg" alt="Синій вечір">
+      </div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Лінія та форма</h3><span>Графіка · 2023</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="w3" data-cat="watercolor" data-title="Польовий етюд" data-year="2024">
+      <div class="gallery-placeholder gp-5">
+        <img class="gallery-img" src="images/arts/gallery/5_main.jpg" alt="Синій вечір">
+      </div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Польовий етюд</h3><span>Акварель · 2024</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="o2" data-cat="oil" data-title="Теплий берег" data-year="2022">
+      <div class="gallery-placeholder gp-6">
+        <img class="gallery-img" src="images/arts/gallery/6_main.jpg" alt="Синій вечір">
+      </div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Теплий берег</h3><span>Масло · 2022</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="e1" data-cat="other" data-title="Абстракція №7" data-year="2024">
+      <div class="gallery-placeholder gp-7"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Абстракція №7</h3><span>Інше · 2024</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="g2" data-cat="graphics" data-title="Портрет у штрихах" data-year="2023">
+      <div class="gallery-placeholder gp-8"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Портрет у штрихах</h3><span>Графіка · 2023</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="w4" data-cat="watercolor" data-title="Дощ на склі" data-year="2025">
+      <div class="gallery-placeholder gp-9"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Дощ на склі</h3><span>Акварель · 2025</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="w5" data-cat="watercolor" data-title="Весняний сад" data-year="2025">
+      <div class="gallery-placeholder gp-2"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Весняний сад</h3><span>Акварель · 2025</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="o3" data-cat="oil" data-title="Захід над полем" data-year="2023">
+      <div class="gallery-placeholder gp-5"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Захід над полем</h3><span>Масло · 2023</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="g3" data-cat="graphics" data-title="Місто у контурах" data-year="2022">
+      <div class="gallery-placeholder gp-7"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Місто у контурах</h3><span>Графіка · 2022</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="w6" data-cat="watercolor" data-title="Озеро на світанку" data-year="2024">
+      <div class="gallery-placeholder gp-4"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Озеро на світанку</h3><span>Акварель · 2024</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="e2" data-cat="other" data-title="Колаж №3" data-year="2023">
+      <div class="gallery-placeholder gp-1"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Колаж №3</h3><span>Інше · 2023</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="o4" data-cat="oil" data-title="Зимовий ліс" data-year="2022">
+      <div class="gallery-placeholder gp-6"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Зимовий ліс</h3><span>Масло · 2022</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="w7" data-cat="watercolor" data-title="Польові квіти" data-year="2025">
+      <div class="gallery-placeholder gp-9"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Польові квіти</h3><span>Акварель · 2025</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="g4" data-cat="graphics" data-title="Тінь та об'єм" data-year="2024">
+      <div class="gallery-placeholder gp-3"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Тінь та об'єм</h3><span>Графіка · 2024</span></div></div>
+    </div>
+
+    <div class="gallery-item" data-id="e3" data-cat="other" data-title="Текстура №12" data-year="2025">
+      <div class="gallery-placeholder gp-8"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3>Текстура №12</h3><span>Інше · 2025</span></div></div>
+    </div>
+
+  </div>
+
+  <!-- PAGINATION -->
+  <div class="pagination" id="pagination"></div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-section">
+    <div class="about-image-wrap">
+      <div class="about-placeholder">
+        <!-- Замініть на <img src="about.jpg" alt="Ваше фото"> -->
+         <img class="about-img" src="images/pages/pages_about.JPG" alt="Ваше фото">
+      </div>
+      <div class="about-accent-line"></div>
+    </div>
+
+    <div class="about-content">
+      <span class="section-label" data-i18n="about.label">Про мене</span>
+      <h2 class="about-title" data-i18n="about.title">Кожна робота —<br>це <em>розмова</em><br>зі світлом</h2>
+      <p class="about-text" data-i18n="about.p1">
+        Напишіть тут кілька слів про себе, свій творчий шлях та натхнення. Розкажіть, де ви навчалися, які техніки любите і що вас надихає.
+      </p>
+      <p class="about-text" data-i18n="about.p2">
+        Акварель для мене — це не лише техніка, а спосіб мислення. Вода і пігмент живуть своїм життям, і моя роль — лише направляти цей діалог.
+      </p>
+      <div class="about-stats">
+        <div>
+          <div class="stat-num">10+</div>
+          <div class="stat-label" data-i18n="about.stat1">Років творчості</div>
+        </div>
+        <div>
+          <div class="stat-num">80+</div>
+          <div class="stat-label" data-i18n="about.stat2">Завершених робіт</div>
+        </div>
+        <div>
+          <div class="stat-num">12</div>
+          <div class="stat-label" data-i18n="about.stat3">Виставок</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog-section" id="blog">
+  <div class="section-header">
+    <span class="section-label" data-i18n="blog.label">Нотатки</span>
+    <h2 class="section-title" data-i18n="blog.title">Думки та <em>натхнення</em></h2>
+  </div>
+  <div class="blog-grid" id="blog-grid"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <span class="section-label" data-i18n="contact.label">Зв'язок</span>
+    <h2 class="section-title" data-i18n="contact.title">Давайте <em>поговоримо</em></h2>
+    <p class="contact-sub" data-i18n="contact.sub">
+      Зацікавлені у придбанні роботи, спільному проекті або просто хочете написати — буду рада почути.
+    </p>
+    <a href="mailto:your@email.com" class="contact-email">your@email.com</a>
+
+    <div class="social-links">
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+      <a href="https://www.pinterest.com/" target="_blank" rel="noopener">Pinterest</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p data-i18n="footer.copy">© 2025 Ім'я Художника</p>
+  <p data-i18n="footer.rights">Усі права захищено</p>
+</footer>
+
+</div><!-- /main-content -->
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Повернутись вгору">
+  <svg viewBox="0 0 16 16"><polyline points="2,11 8,5 14,11"/></svg>
+</button>
+
+<!-- WORK PAGE -->
+<div id="work-page">
+  <div class="work-page-inner">
+    <div class="work-page-image">
+      <div class="work-page-placeholder" id="wp-placeholder"></div>
+    </div>
+    <div class="work-page-meta">
+      <button class="work-back" id="wp-back">
+        <svg viewBox="0 0 14 14"><polyline points="9,2 4,7 9,12"/></svg>
+        <span data-i18n="work.back">Назад до галереї</span>
+      </button>
+      <span class="work-category" id="wp-category"></span>
+      <h1 class="work-title" id="wp-title"></h1>
+      <div class="work-details">
+        <div>
+          <div class="work-detail-label" data-i18n="work.year">Рік</div>
+          <div class="work-detail-value" id="wp-year"></div>
+        </div>
+        <div>
+          <div class="work-detail-label" data-i18n="work.technique">Техніка</div>
+          <div class="work-detail-value" id="wp-technique"></div>
+        </div>
+        <div>
+          <div class="work-detail-label" data-i18n="work.size">Розмір</div>
+          <div class="work-detail-value" id="wp-size"></div>
+        </div>
+        <div>
+          <div class="work-detail-label" data-i18n="work.status">Статус</div>
+          <div class="work-detail-value" id="wp-status"></div>
+        </div>
+      </div>
+      <p class="work-description" id="wp-desc"></p>
+      <div class="work-nav">
+        <button class="work-nav-btn" id="wp-prev" data-i18n="work.prev">← Попередня</button>
+        <button class="work-nav-btn" id="wp-next" data-i18n="work.next">Наступна →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- POST PAGE -->
+<div id="post-page">
+  <div class="post-page-inner">
+    <button class="post-back" id="post-back">
+      <svg viewBox="0 0 14 14"><polyline points="9,2 4,7 9,12"/></svg>
+      <span data-i18n="blog.back">Назад до блогу</span>
+    </button>
+    <span class="post-tag"  id="post-tag"></span>
+    <h1 class="post-title"  id="post-title"></h1>
+    <span class="post-date" id="post-date"></span>
+    <div class="post-body"  id="post-body"></div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lb-close">✕</button>
+  <div class="lightbox-content" id="lb-content">
+    <div class="lightbox-placeholder" id="lb-placeholder"></div>
+    <div class="lightbox-caption">
+      <h3 id="lb-title"></h3>
+      <span id="lb-sub"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ── i18n ─────────────────────────────────────────────
+  const I18N = {
+    uk: {
+      'nav.gallery': 'Галерея', 'nav.blog': 'Блог', 'nav.about': 'Про мене', 'nav.contact': 'Контакти',
+      'hero.eyebrow': 'Живопис · Акварель',
+      'hero.title': 'Мистецтво,<br>що <em>дихає</em><br>кольором',
+      'hero.sub': 'Роботи в техніці акварелі, що передають настрій, світло і тишу кожної миті.',
+      'hero.cta1': 'Переглянути роботи', 'hero.cta2': 'Зв\'язатися',
+      'gallery.label': 'Роботи', 'gallery.title': 'Галерея <em>мистецтва</em>',
+      'cat.all': 'Усі', 'cat.watercolor': 'Акварель', 'cat.oil': 'Масло', 'cat.graphics': 'Графіка', 'cat.other': 'Інше',
+      'about.label': 'Про мене',
+      'about.title': 'Кожна робота —<br>це <em>розмова</em><br>зі світлом',
+      'about.p1': 'Напишіть тут кілька слів про себе, свій творчий шлях та натхнення. Розкажіть, де ви навчалися, які техніки любите і що вас надихає.',
+      'about.p2': 'Акварель для мене — це не лише техніка, а спосіб мислення. Вода і пігмент живуть своїм життям, і моя роль — лише направляти цей діалог.',
+      'about.stat1': 'Років творчості', 'about.stat2': 'Завершених робіт', 'about.stat3': 'Виставок',
+      'contact.label': 'Зв\'язок', 'contact.title': 'Давайте <em>поговоримо</em>',
+      'contact.sub': 'Зацікавлені у придбанні роботи, спільному проекті або просто хочете написати — буду рада почути.',
+      'footer.copy': '© 2025 Ім\'я Художника', 'footer.rights': 'Усі права захищено',
+      'work.back': 'Назад до галереї', 'work.year': 'Рік', 'work.technique': 'Техніка',
+      'work.size': 'Розмір', 'work.status': 'Статус', 'work.prev': '← Попередня', 'work.next': 'Наступна →',
+      'catMap.watercolor': 'Акварель', 'catMap.oil': 'Масло', 'catMap.graphics': 'Графіка', 'catMap.other': 'Інше',
+      'status.available': 'Доступна', 'status.sold': 'Продана',
+      'blog.label': 'Нотатки', 'blog.title': 'Думки та <em>натхнення</em>',
+      'blog.back': 'Назад до блогу', 'blog.readmore': 'Читати далі',
+    },
+    en: {
+      'nav.gallery': 'Gallery', 'nav.blog': 'Blog', 'nav.about': 'About', 'nav.contact': 'Contact',
+      'hero.eyebrow': 'Painting · Watercolour',
+      'hero.title': 'Art that<br><em>breathes</em><br>colour',
+      'hero.sub': 'Watercolour works that capture mood, light, and the quiet of every moment.',
+      'hero.cta1': 'View works', 'hero.cta2': 'Get in touch',
+      'gallery.label': 'Works', 'gallery.title': 'Art <em>gallery</em>',
+      'cat.all': 'All', 'cat.watercolor': 'Watercolour', 'cat.oil': 'Oil', 'cat.graphics': 'Graphics', 'cat.other': 'Other',
+      'about.label': 'About me',
+      'about.title': 'Every work —<br>a <em>conversation</em><br>with light',
+      'about.p1': 'Write a few words about yourself, your creative journey and inspiration. Tell visitors where you studied, which techniques you love and what drives you.',
+      'about.p2': 'Watercolour for me is not just a technique — it is a way of thinking. Water and pigment live their own life, and my role is simply to guide that dialogue.',
+      'about.stat1': 'Years of practice', 'about.stat2': 'Completed works', 'about.stat3': 'Exhibitions',
+      'contact.label': 'Contact', 'contact.title': 'Let\'s <em>talk</em>',
+      'contact.sub': 'Interested in purchasing a work, a collaboration, or just want to say hello — I\'d love to hear from you.',
+      'footer.copy': '© 2025 Artist Name', 'footer.rights': 'All rights reserved',
+      'work.back': 'Back to gallery', 'work.year': 'Year', 'work.technique': 'Technique',
+      'work.size': 'Size', 'work.status': 'Status', 'work.prev': '← Previous', 'work.next': 'Next →',
+      'catMap.watercolor': 'Watercolour', 'catMap.oil': 'Oil', 'catMap.graphics': 'Graphics', 'catMap.other': 'Other',
+      'status.available': 'Available', 'status.sold': 'Sold',
+      'blog.label': 'Notes', 'blog.title': 'Thoughts & <em>inspiration</em>',
+      'blog.back': 'Back to blog', 'blog.readmore': 'Read more',
+    },
+    de: {
+      'nav.gallery': 'Galerie', 'nav.blog': 'Blog', 'nav.about': 'Über mich', 'nav.contact': 'Kontakt',
+      'hero.eyebrow': 'Malerei · Aquarell',
+      'hero.title': 'Kunst, die<br><em>atmet</em><br>in Farbe',
+      'hero.sub': 'Aquarellarbeiten, die Stimmung, Licht und die Stille jedes Moments festhalten.',
+      'hero.cta1': 'Werke ansehen', 'hero.cta2': 'Kontakt aufnehmen',
+      'gallery.label': 'Werke', 'gallery.title': 'Kunst<em>galerie</em>',
+      'cat.all': 'Alle', 'cat.watercolor': 'Aquarell', 'cat.oil': 'Öl', 'cat.graphics': 'Grafik', 'cat.other': 'Sonstiges',
+      'about.label': 'Über mich',
+      'about.title': 'Jedes Werk —<br>ein <em>Gespräch</em><br>mit dem Licht',
+      'about.p1': 'Schreiben Sie hier ein paar Worte über sich, Ihren kreativen Weg und Ihre Inspiration. Erzählen Sie, wo Sie gelernt haben, welche Techniken Sie lieben und was Sie antreibt.',
+      'about.p2': 'Aquarell ist für mich nicht nur eine Technik — es ist eine Denkweise. Wasser und Pigment führen ihr eigenes Leben, und meine Aufgabe ist es, diesen Dialog zu lenken.',
+      'about.stat1': 'Jahre Erfahrung', 'about.stat2': 'Abgeschlossene Werke', 'about.stat3': 'Ausstellungen',
+      'contact.label': 'Kontakt', 'contact.title': 'Lassen Sie uns <em>reden</em>',
+      'contact.sub': 'Interesse am Kauf eines Werkes, an einer Zusammenarbeit oder möchten Sie einfach Hallo sagen — ich freue mich von Ihnen zu hören.',
+      'footer.copy': '© 2025 Künstlername', 'footer.rights': 'Alle Rechte vorbehalten',
+      'work.back': 'Zurück zur Galerie', 'work.year': 'Jahr', 'work.technique': 'Technik',
+      'work.size': 'Größe', 'work.status': 'Status', 'work.prev': '← Vorherige', 'work.next': 'Nächste →',
+      'catMap.watercolor': 'Aquarell', 'catMap.oil': 'Öl', 'catMap.graphics': 'Grafik', 'catMap.other': 'Sonstiges',
+      'status.available': 'Verfügbar', 'status.sold': 'Verkauft',
+      'blog.label': 'Notizen', 'blog.title': 'Gedanken & <em>Inspiration</em>',
+      'blog.back': 'Zurück zum Blog', 'blog.readmore': 'Weiterlesen',
+    },
+  };
+
+  let currentLang = localStorage.getItem('lang') || 'uk';
+
+  function t(key) { return I18N[currentLang][key] || I18N.uk[key] || key; }
+
+  function applyLang() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      el.innerHTML = t(el.dataset.i18n);
+    });
+    // оновити перемикач
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === currentLang);
+    });
+    // оновити атрибут lang на html
+    document.documentElement.lang = currentLang;
+    // оновити title
+    document.title = currentLang === 'uk' ? 'Ім\'я Художника — Живопис та акварель'
+                   : currentLang === 'en' ? 'Artist Name — Painting & Watercolour'
+                   : 'Künstlername — Malerei & Aquarell';
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentLang = btn.dataset.lang;
+      localStorage.setItem('lang', currentLang);
+      applyLang();
+      renderBlog();
+      // якщо відкрита сторінка роботи — оновити всі мовні дані
+      if (document.getElementById('work-page').classList.contains('active')) {
+        const currentId = document.getElementById('wp-title').dataset.currentId;
+        if (currentId) showWork(currentId);
+        else {
+          document.getElementById('wp-prev').textContent = t('work.prev');
+          document.getElementById('wp-next').textContent = t('work.next');
+        }
+      }
+      // якщо відкрита сторінка поста — оновити текст
+      if (document.getElementById('post-page').classList.contains('active')) {
+        const postId = document.getElementById('post-title').dataset.currentId;
+        if (postId) showPost(postId);
+      }
+    });
+  });
+
+  applyLang();
+
+
+  const WORKS = {
+    w1: {
+      uk: { technique: 'Акварель на папері', status: 'Доступна', desc: 'Ранкова серія. Туман над полем у ранні години — коли земля ще не прокинулась, а світло вже є. Робота написана з натури під час пленеру.' },
+      en: { technique: 'Watercolour on paper', status: 'Available', desc: 'Morning series. Fog over the field in the early hours — when the earth has not yet woken, but light already exists. Painted on location during a plein-air session.' },
+      de: { technique: 'Aquarell auf Papier', status: 'Verfügbar', desc: 'Morgenserie. Nebel über dem Feld in den frühen Stunden — wenn die Erde noch schläft, aber das Licht schon da ist. En plein air gemalt.' },
+      size: '30 × 40 см',
+    },
+    w2: {
+      uk: { technique: 'Акварель на папері', status: 'Продана', desc: 'Вечірній синій — улюблена година художника. Між днем і ніччю, коли кольори найглибші і найтихіші.' },
+      en: { technique: 'Watercolour on paper', status: 'Sold', desc: 'Evening blue — the artist\'s favourite hour. Between day and night, when colours are at their deepest and most quiet.' },
+      de: { technique: 'Aquarell auf Papier', status: 'Verkauft', desc: 'Abendblau — die Lieblingsstunde des Künstlers. Zwischen Tag und Nacht, wenn die Farben am tiefsten und stillsten sind.' },
+      size: '24 × 32 см',
+    },
+    w3: {
+      uk: { technique: 'Акварель на папері', status: 'Доступна', desc: 'Польовий етюд написаний за одну сесію. Швидкий запис враження — спеки, трав і вітру.' },
+      en: { technique: 'Watercolour on paper', status: 'Available', desc: 'Field sketch painted in a single session. A quick impression of heat, grass and wind.' },
+      de: { technique: 'Aquarell auf Papier', status: 'Verfügbar', desc: 'Feldstudie in einer Sitzung gemalt. Eine schnelle Impression von Hitze, Gras und Wind.' },
+      size: '40 × 50 см',
+    },
+    w4: {
+      uk: { technique: 'Акварель на папері', status: 'Доступна', desc: 'Крапля за краплею, лінія за лінією — дощ малює своє на склі. Вивчення прозорості та руху.' },
+      en: { technique: 'Watercolour on paper', status: 'Available', desc: 'Drop by drop, line by line — rain draws its own patterns on glass. A study of transparency and movement.' },
+      de: { technique: 'Aquarell auf Papier', status: 'Verfügbar', desc: 'Tropfen für Tropfen, Linie für Linie — Regen zeichnet seine Muster auf Glas. Eine Studie über Transparenz und Bewegung.' },
+      size: '20 × 28 см',
+    },
+    w5: {
+      uk: { technique: 'Акварель на папері', status: 'Доступна', desc: 'Весняний сад у повному цвіту. Робота про радість першого тепла і про те, як природа нагадує нам жити.' },
+      en: { technique: 'Watercolour on paper', status: 'Available', desc: 'Spring garden in full bloom. A work about the joy of first warmth and how nature reminds us to live.' },
+      de: { technique: 'Aquarell auf Papier', status: 'Verfügbar', desc: 'Frühlingsgarten in voller Blüte. Ein Werk über die Freude der ersten Wärme und wie die Natur uns daran erinnert zu leben.' },
+      size: '35 × 45 см',
+    },
+    w6: {
+      uk: { technique: 'Акварель на папері', status: 'Доступна', desc: 'Озеро на світанку — дзеркало між небом і землею. Написане в 5 ранку, поки тиша ще не скінчилась.' },
+      en: { technique: 'Watercolour on paper', status: 'Available', desc: 'Lake at dawn — a mirror between sky and earth. Painted at 5 in the morning while the silence still held.' },
+      de: { technique: 'Aquarell auf Papier', status: 'Verfügbar', desc: 'See bei Sonnenaufgang — ein Spiegel zwischen Himmel und Erde. Um 5 Uhr morgens gemalt, solange die Stille noch anhielt.' },
+      size: '30 × 40 см',
+    },
+    w7: {
+      uk: { technique: 'Акварель на папері', status: 'Продана', desc: 'Польові квіти — прості і невтримні. Серія про красу того, що росте без дозволу.' },
+      en: { technique: 'Watercolour on paper', status: 'Sold', desc: 'Wild flowers — simple and unstoppable. A series about the beauty of what grows without permission.' },
+      de: { technique: 'Aquarell auf Papier', status: 'Verkauft', desc: 'Wildblumen — einfach und unaufhaltsam. Eine Serie über die Schönheit dessen, was ohne Erlaubnis wächst.' },
+      size: '25 × 35 см',
+    },
+    o1: {
+      uk: { technique: 'Олія на полотні', status: 'Продана', desc: 'Осінній пейзаж маслом. Спокій листопаду — коли природа відпускає і готується до сну.' },
+      en: { technique: 'Oil on canvas', status: 'Sold', desc: 'Autumn landscape in oils. The calm of November — when nature lets go and prepares for sleep.' },
+      de: { technique: 'Öl auf Leinwand', status: 'Verkauft', desc: 'Herbstlandschaft in Öl. Die Ruhe des Novembers — wenn die Natur loslässt und sich auf den Schlaf vorbereitet.' },
+      size: '50 × 60 см',
+    },
+    o2: {
+      uk: { technique: 'Олія на полотні', status: 'Доступна', desc: 'Теплий берег наприкінці літа. Сонце вже не пече, але пісок ще тримає тепло.' },
+      en: { technique: 'Oil on canvas', status: 'Available', desc: 'Warm shore at the end of summer. The sun no longer burns, but the sand still holds its warmth.' },
+      de: { technique: 'Öl auf Leinwand', status: 'Verfügbar', desc: 'Warmes Ufer am Ende des Sommers. Die Sonne brennt nicht mehr, aber der Sand hält noch seine Wärme.' },
+      size: '60 × 80 см',
+    },
+    o3: {
+      uk: { technique: 'Олія на полотні', status: 'Доступна', desc: 'Захід над полем — улюблений час. Небо горить, земля слухає. Написано за два вечори.' },
+      en: { technique: 'Oil on canvas', status: 'Available', desc: 'Sunset over the field — the favourite hour. The sky burns, the earth listens. Painted over two evenings.' },
+      de: { technique: 'Öl auf Leinwand', status: 'Verfügbar', desc: 'Sonnenuntergang über dem Feld — die Lieblingsstunde. Der Himmel brennt, die Erde lauscht. In zwei Abenden gemalt.' },
+      size: '70 × 90 см',
+    },
+    o4: {
+      uk: { technique: 'Олія на полотні', status: 'Доступна', desc: 'Зимовий ліс у білій тиші. Мінімум кольору — максимум відчуття простору і холоду.' },
+      en: { technique: 'Oil on canvas', status: 'Available', desc: 'Winter forest in white silence. Minimum colour — maximum sense of space and cold.' },
+      de: { technique: 'Öl auf Leinwand', status: 'Verfügbar', desc: 'Winterwald in weißer Stille. Minimale Farbe — maximales Gefühl von Raum und Kälte.' },
+      size: '50 × 70 см',
+    },
+    g1: {
+      uk: { technique: 'Графіка, туш', status: 'Доступна', desc: 'Лінія та форма — дослідження мінімалізму. Що залишається, коли прибрати все зайве?' },
+      en: { technique: 'Ink on paper', status: 'Available', desc: 'Line and form — a study of minimalism. What remains when everything unnecessary is removed?' },
+      de: { technique: 'Tusche auf Papier', status: 'Verfügbar', desc: 'Linie und Form — eine Studie des Minimalismus. Was bleibt, wenn alles Überflüssige entfernt wird?' },
+      size: '21 × 29 см',
+    },
+    g2: {
+      uk: { technique: 'Олівець на папері', status: 'Продана', desc: 'Портрет у штрихах. Малюнок відтворює характер, а не лише риси обличчя.' },
+      en: { technique: 'Pencil on paper', status: 'Sold', desc: 'Portrait in strokes. The drawing captures character, not just facial features.' },
+      de: { technique: 'Bleistift auf Papier', status: 'Verkauft', desc: 'Porträt in Strichen. Die Zeichnung erfasst den Charakter, nicht nur die Gesichtszüge.' },
+      size: '29 × 42 см',
+    },
+    g3: {
+      uk: { technique: 'Графіка, туш', status: 'Доступна', desc: 'Місто у контурах — архітектурна зарисовка. Лінії і простір, ритм і тиша між будинками.' },
+      en: { technique: 'Ink on paper', status: 'Available', desc: 'City in outlines — an architectural sketch. Lines and space, rhythm and silence between buildings.' },
+      de: { technique: 'Tusche auf Papier', status: 'Verfügbar', desc: 'Stadt in Konturen — eine Architekturstudie. Linien und Raum, Rhythmus und Stille zwischen den Gebäuden.' },
+      size: '21 × 29 см',
+    },
+    g4: {
+      uk: { technique: 'Вугілля на папері', status: 'Доступна', desc: 'Тінь та об\'єм. Гра світла і темряви — дослідження форми без кольору.' },
+      en: { technique: 'Charcoal on paper', status: 'Available', desc: 'Shadow and volume. A play of light and darkness — a study of form without colour.' },
+      de: { technique: 'Kohle auf Papier', status: 'Verfügbar', desc: 'Schatten und Volumen. Ein Spiel von Licht und Dunkelheit — eine Studie der Form ohne Farbe.' },
+      size: '40 × 50 см',
+    },
+    e1: {
+      uk: { technique: 'Змішана техніка', status: 'Доступна', desc: 'Абстракція №7 із серії досліджень кольору та текстури. Акварель, пастель, колаж.' },
+      en: { technique: 'Mixed media', status: 'Available', desc: 'Abstraction No. 7 from a series of colour and texture studies. Watercolour, pastel, collage.' },
+      de: { technique: 'Mischtechnik', status: 'Verfügbar', desc: 'Abstraktion Nr. 7 aus einer Serie von Farb- und Texturstudien. Aquarell, Pastell, Collage.' },
+      size: '30 × 30 см',
+    },
+    e2: {
+      uk: { technique: 'Колаж, змішана', status: 'Продана', desc: 'Колаж №3 — синтез різних матеріалів і часів. Газети, тканина, акрил.' },
+      en: { technique: 'Collage, mixed media', status: 'Sold', desc: 'Collage No. 3 — a synthesis of different materials and times. Newspaper, fabric, acrylic.' },
+      de: { technique: 'Collage, Mischtechnik', status: 'Verkauft', desc: 'Collage Nr. 3 — eine Synthese verschiedener Materialien und Zeiten. Zeitung, Stoff, Acryl.' },
+      size: '40 × 40 см',
+    },
+    e3: {
+      uk: { technique: 'Змішана техніка', status: 'Доступна', desc: 'Текстура №12. Дослідження поверхні та матеріалу — коли фактура стає змістом.' },
+      en: { technique: 'Mixed media', status: 'Available', desc: 'Texture No. 12. A study of surface and material — when texture becomes the content.' },
+      de: { technique: 'Mischtechnik', status: 'Verfügbar', desc: 'Textur Nr. 12. Eine Studie über Oberfläche und Material — wenn die Textur zum Inhalt wird.' },
+      size: '50 × 50 см',
+    },
+  };
+
+  const catMap = () => ({ watercolor: t('catMap.watercolor'), oil: t('catMap.oil'), graphics: t('catMap.graphics'), other: t('catMap.other') });
+  const ITEMS_PER_PAGE = 9;
+  let currentCat = 'all';
+  let currentPage = 1;
+
+  // ── ROUTER ───────────────────────────────────────────
+  const mainContent  = document.getElementById('main-content');
+  const workPage     = document.getElementById('work-page');
+  const allItems     = Array.from(document.querySelectorAll('.gallery-item'));
+
+  function showWork(id) {
+    const el = allItems.find(i => i.dataset.id === id);
+    if (!el) return;
+
+    const { title, year, cat } = el.dataset;
+    const extra = WORKS[id] || {};
+    const loc   = extra[currentLang] || extra.uk || {};
+
+    // заповнюємо поля
+    const ph = el.querySelector('.gallery-placeholder');
+    const wpPh = document.getElementById('wp-placeholder');
+    wpPh.innerHTML = '';
+    const clone = ph.cloneNode(true);
+    clone.style.width = '100%';
+    clone.style.aspectRatio = 'auto';
+    wpPh.appendChild(clone);
+    const cloneImg = clone.querySelector('img');
+    if (cloneImg) {
+      cloneImg.style.objectFit = 'contain';
+      cloneImg.style.background = 'var(--warm-white)';
+    }
+
+    document.getElementById('wp-category').textContent  = catMap()[cat] || cat;
+    document.getElementById('wp-title').textContent     = title;
+    document.getElementById('wp-title').dataset.currentId = id;
+    document.getElementById('wp-year').textContent      = year;
+    document.getElementById('wp-technique').textContent = loc.technique || '—';
+    document.getElementById('wp-size').textContent      = extra.size    || '—';
+    document.getElementById('wp-status').textContent    = loc.status    || '—';
+    document.getElementById('wp-desc').textContent      = loc.desc      || '';
+
+    // навігація між роботами
+    const idx = allItems.indexOf(el);
+    const prevEl = allItems[idx - 1];
+    const nextEl = allItems[idx + 1];
+    const prevBtn = document.getElementById('wp-prev');
+    const nextBtn = document.getElementById('wp-next');
+    prevBtn.disabled = !prevEl;
+    nextBtn.disabled = !nextEl;
+    prevBtn.onclick = () => prevEl && showWork(prevEl.dataset.id);
+    nextBtn.onclick = () => nextEl && showWork(nextEl.dataset.id);
+
+    // показуємо сторінку роботи
+    mainContent.style.display = 'none';
+    workPage.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    try { history.pushState({ workId: id }, '', '#work/' + id); } catch(e) {}
+    document.title = title + ' — Ім\'я Художника';
+  }
+
+  function showGallery() {
+    mainContent.style.display = '';
+    workPage.classList.remove('active');
+    document.getElementById('post-page').classList.remove('active');
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    try { history.pushState({}, '', '#'); } catch(e) {}
+    document.title = currentLang === 'uk' ? 'Ім\'я Художника — Живопис та акварель'
+                   : currentLang === 'en' ? 'Artist Name — Painting & Watercolour'
+                   : 'Künstlername — Malerei & Aquarell';
+  }
+
+  document.getElementById('wp-back').addEventListener('click', showGallery);
+
+  // обробка кнопки «назад» браузера
+  window.addEventListener('popstate', e => {
+    if (e.state && e.state.workId) {
+      showWork(e.state.workId);
+    } else if (e.state && e.state.postId) {
+      showPost(e.state.postId);
+    } else {
+      showGallery();
+    }
+  });
+
+  // відкриття по прямому URL #work/id
+  const hashMatch = location.hash.match(/^#work\/(.+)$/);
+  if (hashMatch) showWork(hashMatch[1]);
+
+  // клік по картці галереї
+  allItems.forEach(item => {
+    item.addEventListener('click', () => showWork(item.dataset.id));
+    item.style.cursor = 'pointer';
+  });
+
+  // ── PAGINATION ────────────────────────────────────────
+  const grid        = document.querySelector('.gallery-grid');
+  const paginationEl = document.getElementById('pagination');
+
+  function getFilteredItems(cat) {
+    return allItems.filter(i => cat === 'all' || i.dataset.cat === cat);
+  }
+
+  function renderPage(cat, page) {
+    const filtered = getFilteredItems(cat);
+    const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+    const safePage = Math.max(1, Math.min(page, totalPages || 1));
+    const start = (safePage - 1) * ITEMS_PER_PAGE;
+    const end   = start + ITEMS_PER_PAGE;
+
+    grid.classList.add('fading');
+    setTimeout(() => {
+      allItems.forEach(i => i.classList.add('hidden'));
+      filtered.slice(start, end).forEach((item, i) => {
+        item.classList.remove('hidden');
+        item.style.opacity   = '0';
+        item.style.transform = 'translateY(16px)';
+        item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        setTimeout(() => { item.style.opacity = '1'; item.style.transform = 'translateY(0)'; }, 40 + i * 30);
+      });
+      grid.classList.remove('fading');
+      renderPagination(totalPages, safePage);
+    }, 200);
+    currentPage = safePage;
+  }
+
+  function renderPagination(total, page) {
+    paginationEl.innerHTML = '';
+    if (total <= 1) return;
+
+    const prev = document.createElement('button');
+    prev.className = 'page-btn arrow'; prev.textContent = '←'; prev.disabled = page === 1;
+    prev.addEventListener('click', () => { renderPage(currentCat, currentPage - 1); scrollToGallery(); });
+    paginationEl.appendChild(prev);
+
+    for (let i = 1; i <= total; i++) {
+      const btn = document.createElement('button');
+      btn.className = 'page-btn' + (i === page ? ' active' : '');
+      btn.textContent = i;
+      btn.addEventListener('click', () => { renderPage(currentCat, i); scrollToGallery(); });
+      paginationEl.appendChild(btn);
+    }
+
+    const next = document.createElement('button');
+    next.className = 'page-btn arrow'; next.textContent = '→'; next.disabled = page === total;
+    next.addEventListener('click', () => { renderPage(currentCat, currentPage + 1); scrollToGallery(); });
+    paginationEl.appendChild(next);
+  }
+
+  function scrollToGallery() {
+    const top = document.getElementById('gallery').getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+
+  // ── TABS ─────────────────────────────────────────────
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(tab => tab.classList.remove('active'));
+      btn.classList.add('active');
+      currentCat = btn.dataset.cat;
+      renderPage(currentCat, 1);
+    });
+  });
+
+  renderPage('all', 1);
+
+  // ── SMOOTH SCROLL ─────────────────────────────────────
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const href = link.getAttribute('href');
+      if (!href || href === '#') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ── LIGHTBOX ─────────────────────────────────────────
+  function openLightbox(placeholderEl, title, sub) {
+    const lbPh = document.getElementById('lb-placeholder');
+    lbPh.innerHTML = '';
+    const clone = placeholderEl.cloneNode(true);
+    clone.style.width = '100%';
+    clone.style.maxHeight = '80vh';
+    clone.style.aspectRatio = 'auto';
+    lbPh.appendChild(clone);
+    const cloneImg = clone.querySelector('img');
+    if (cloneImg) {
+      cloneImg.style.objectFit = 'contain';
+      cloneImg.style.background = 'transparent';
+    }
+    document.getElementById('lb-title').textContent = title || '';
+    document.getElementById('lb-sub').textContent   = sub   || '';
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('lb-close').addEventListener('click', closeLightbox);
+  document.getElementById('lightbox').addEventListener('click', e => {
+    if (e.target === document.getElementById('lightbox')) closeLightbox();
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  // клік на зображення сторінки роботи
+  document.getElementById('wp-placeholder').addEventListener('click', () => {
+    const title = document.getElementById('wp-title').textContent;
+    const cat   = document.getElementById('wp-category').textContent;
+    const year  = document.getElementById('wp-year').textContent;
+    const ph    = document.getElementById('wp-placeholder').firstElementChild;
+    if (ph) openLightbox(ph, title, cat + ' · ' + year);
+  });
+
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.about-image-wrap, .about-content').forEach(el => {
+    el.style.opacity = '0'; el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+    observer.observe(el);
+  });
+
+  // ── PRELOADER ─────────────────────────────────────────
+  function hidePreloader() {
+    document.body.classList.remove('loading');
+    document.getElementById('preloader').classList.add('hidden');
+    document.querySelectorAll('.fade-up').forEach(el => { el.style.animation = ''; el.style.opacity = '0'; });
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => setTimeout(hidePreloader, 400));
+  } else {
+    window.addEventListener('load', () => setTimeout(hidePreloader, 400));
+  }
+
+  // ── ACTIVE NAV ───────────────────────────────────────
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const sections = ['gallery', 'blog', 'about', 'contact'].map(id => document.getElementById(id));
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + id));
+      }
+    });
+  }, { threshold: 0.25, rootMargin: '-80px 0px -40% 0px' });
+
+  sections.forEach(s => s && navObserver.observe(s));
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY < 100) navLinks.forEach(link => link.classList.remove('active'));
+  }, { passive: true });
+
+  // ── BLOG POSTS ───────────────────────────────────────
+  const POSTS = [
+    {
+      id: 'plein-air',
+      tag: { uk: 'Пленер', en: 'Plein air', de: 'Freilichtmalerei' },
+      date: '15 квітня 2025',
+      uk: {
+        title: 'Чому я малюю надворі',
+        excerpt: 'Студія — це контроль. Пленер — це діалог. Вітер змінює консистенцію фарби, сонце сушить папір швидше ніж ти встигаєш думати, і саме це змушує малювати інакше.',
+        body: `<p>Студія — це контроль. Пленер — це діалог. Вітер змінює консистенцію фарби, сонце сушить папір швидше ніж ти встигаєш думати, і саме це змушує малювати інакше.</p><p>Коли я вперше вийшла на вулицю з аркушем і фарбами, я хотіла відтворити пейзаж. Зараз я вже не намагаюся. Я записую враження — запах трави після дощу, те як світло стрибає по воді, відчуття спеки на шкірі. Картина стає нотаткою, а не копією.</p><p>Є одна практична порада, яку я можу дати: беріть менше матеріалів. Один аркуш, шість кольорів, одна пензлика. Обмеження звільняють.</p>`,
+      },
+      en: {
+        title: 'Why I paint outdoors',
+        excerpt: 'The studio is control. Plein air is dialogue. Wind changes the consistency of the paint, the sun dries paper faster than you can think, and that is precisely what makes you paint differently.',
+        body: `<p>The studio is control. Plein air is dialogue. Wind changes the consistency of the paint, the sun dries paper faster than you can think, and that is precisely what makes you paint differently.</p><p>When I first went outside with a sheet and paints, I wanted to reproduce the landscape. Now I no longer try. I record impressions — the smell of grass after rain, the way light jumps off water, the feeling of heat on skin. The painting becomes a note, not a copy.</p><p>One practical tip: take fewer materials. One sheet, six colours, one brush. Constraints are liberating.</p>`,
+      },
+      de: {
+        title: 'Warum ich im Freien male',
+        excerpt: 'Das Atelier ist Kontrolle. Freilichtmalerei ist Dialog. Wind verändert die Konsistenz der Farbe, die Sonne trocknet das Papier schneller als man denken kann – und genau das zwingt einen, anders zu malen.',
+        body: `<p>Das Atelier ist Kontrolle. Freilichtmalerei ist Dialog. Wind verändert die Konsistenz der Farbe, die Sonne trocknet das Papier schneller als man denken kann – und genau das zwingt einen, anders zu malen.</p><p>Als ich das erste Mal mit einem Blatt und Farben nach draußen ging, wollte ich die Landschaft wiedergeben. Jetzt versuche ich das nicht mehr. Ich halte Eindrücke fest – den Geruch von Gras nach dem Regen, wie das Licht über das Wasser springt, das Gefühl der Hitze auf der Haut. Das Gemälde wird zur Notiz, nicht zur Kopie.</p><p>Ein praktischer Tipp: Nehmen Sie weniger Material mit. Ein Blatt, sechs Farben, ein Pinsel. Einschränkungen befreien.</p>`,
+      },
+    },
+    {
+      id: 'watercolor-paper',
+      tag: { uk: 'Техніка', en: 'Technique', de: 'Technik' },
+      date: '2 березня 2025',
+      uk: {
+        title: 'Як вибрати папір для акварелі',
+        excerpt: 'Папір — це половина результату. Я витратила роки на те, щоб зрозуміти це, і кілька тисяч гривень на «неправильний» папір, який мене навчив більше ніж правильний.',
+        body: `<p>Папір — це половина результату. Я витратила роки на те, щоб зрозуміти це, і кілька тисяч гривень на «неправильний» папір, який мене навчив більше ніж правильний.</p><p>Є три параметри, які справді мають значення: щільність (мінімум 300 г/м²), текстура (дрібне зерно для деталей, крупне для атмосфери) і склад (бавовна тримає воду інакше ніж целюлоза — м'якше, з більшою свободою для мокрого по мокрому).</p><p>Мій теперішній вибір — Fabriano Artistico 300 г/м², хлопок. Але чесно кажучи, найкращий папір — той, на якому ти малюєш регулярно і знаєш його поведінку напам'ять.</p>`,
+      },
+      en: {
+        title: 'How to choose watercolour paper',
+        excerpt: 'Paper is half the result. I spent years understanding this, and quite a bit of money on the "wrong" paper that taught me more than the right kind.',
+        body: `<p>Paper is half the result. I spent years understanding this, and quite a bit of money on the "wrong" paper that taught me more than the right kind.</p><p>There are three parameters that really matter: weight (minimum 300 g/m²), texture (fine grain for detail, coarse for atmosphere) and composition (cotton holds water differently from cellulose — softer, with more freedom for wet-on-wet).</p><p>My current choice is Fabriano Artistico 300 g/m², cotton. But honestly, the best paper is the one you work on regularly and know its behaviour by heart.</p>`,
+      },
+      de: {
+        title: 'Wie man Aquarellpapier auswählt',
+        excerpt: 'Papier ist die Hälfte des Ergebnisses. Ich brauchte Jahre, um das zu verstehen, und einiges Geld für das „falsche" Papier, das mich mehr gelehrt hat als das richtige.',
+        body: `<p>Papier ist die Hälfte des Ergebnisses. Ich brauchte Jahre, um das zu verstehen, und einiges Geld für das „falsche" Papier, das mich mehr gelehrt hat als das richtige.</p><p>Es gibt drei Parameter, die wirklich wichtig sind: Gewicht (mindestens 300 g/m²), Textur (feines Korn für Details, grobes für Atmosphäre) und Zusammensetzung (Baumwolle hält Wasser anders als Zellulose – weicher, mit mehr Freiheit für Nass-in-Nass).</p><p>Meine aktuelle Wahl ist Fabriano Artistico 300 g/m², Baumwolle. Aber ehrlich gesagt ist das beste Papier dasjenige, mit dem man regelmäßig arbeitet und dessen Verhalten man auswendig kennt.</p>`,
+      },
+    },
+    {
+      id: 'exhibition-notes',
+      tag: { uk: 'Виставки', en: 'Exhibitions', de: 'Ausstellungen' },
+      date: '18 лютого 2025',
+      uk: {
+        title: 'Нотатки після першої персональної',
+        excerpt: 'Вісімнадцять робіт на стінах. Люди, яких я не знаю, зупиняються і дивляться. Одна жінка стоїть перед «Ранковим туманом» вже п\'ять хвилин. Я не підходжу — це вже не моя картина.',
+        body: `<p>Вісімнадцять робіт на стінах. Люди, яких я не знаю, зупиняються і дивляться. Одна жінка стоїть перед «Ранковим туманом» вже п'ять хвилин. Я не підходжу — це вже не моя картина.</p><p>Готуватися до першої персональної виставки — це як редагувати щоденник, який ти писала роками, і вирішувати що показати чужим людям. Страшно і необхідно одночасно.</p><p>Я обрала роботи не за якістю, а за чесністю. Ті де я шукала, а не знала. Ті де видно сумнів і виправлення. Здається, саме вони зупиняють людей довше за все.</p>`,
+      },
+      en: {
+        title: 'Notes after my first solo show',
+        excerpt: 'Eighteen works on the walls. People I don\'t know stop and look. A woman has been standing in front of "Morning Fog" for five minutes. I don\'t approach — it is no longer my painting.',
+        body: `<p>Eighteen works on the walls. People I don't know stop and look. A woman has been standing in front of "Morning Fog" for five minutes. I don't approach — it is no longer my painting.</p><p>Preparing for your first solo show is like editing a diary you have been writing for years and deciding what to show to strangers. Terrifying and necessary at the same time.</p><p>I chose works not by quality but by honesty. The ones where I was searching, not knowing. The ones where doubt and correction are visible. Those seem to be the ones that make people stop the longest.</p>`,
+      },
+      de: {
+        title: 'Notizen nach meiner ersten Einzelausstellung',
+        excerpt: 'Achtzehn Werke an den Wänden. Menschen, die ich nicht kenne, bleiben stehen und schauen. Eine Frau steht seit fünf Minuten vor „Morgennebel". Ich gehe nicht hin — es ist nicht mehr mein Bild.',
+        body: `<p>Achtzehn Werke an den Wänden. Menschen, die ich nicht kenne, bleiben stehen und schauen. Eine Frau steht seit fünf Minuten vor „Morgennebel". Ich gehe nicht hin — es ist nicht mehr mein Bild.</p><p>Die Vorbereitung auf die erste Einzelausstellung ist wie das Bearbeiten eines Tagebuchs, das man jahrelang geschrieben hat, und die Entscheidung, was man Fremden zeigt. Gleichzeitig erschreckend und notwendig.</p><p>Ich wählte Werke nicht nach Qualität, sondern nach Ehrlichkeit. Die, bei denen ich suchte und nicht wusste. Die, bei denen Zweifel und Korrekturen sichtbar sind. Genau diese scheinen die Menschen am längsten anzuhalten.</p>`,
+      },
+    },
+  ];
+
+  // ── BLOG RENDER ──────────────────────────────────────
+  function renderBlog() {
+    const grid = document.getElementById('blog-grid');
+    grid.innerHTML = '';
+    POSTS.forEach(post => {
+      const loc = post[currentLang] || post.uk;
+      const card = document.createElement('article');
+      card.className = 'blog-card';
+      card.innerHTML = `
+        <span class="blog-card-tag">${post.tag[currentLang] || post.tag.uk}</span>
+        <h3 class="blog-card-title">${loc.title}</h3>
+        <p class="blog-card-excerpt">${loc.excerpt}</p>
+        <span class="blog-card-meta">${post.date}</span>
+      `;
+      card.addEventListener('click', () => showPost(post.id));
+      grid.appendChild(card);
+    });
+  }
+
+  // ── POST ROUTER ──────────────────────────────────────
+  function showPost(id) {
+    const post = POSTS.find(p => p.id === id);
+    if (!post) return;
+    const loc = post[currentLang] || post.uk;
+
+    document.getElementById('post-tag').textContent   = post.tag[currentLang] || post.tag.uk;
+    document.getElementById('post-title').textContent = loc.title;
+    document.getElementById('post-date').textContent  = post.date;
+    document.getElementById('post-body').innerHTML    = loc.body;
+    document.getElementById('post-title').dataset.currentId = id;
+
+    mainContent.style.display = 'none';
+    workPage.classList.remove('active');
+    document.getElementById('post-page').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    try { history.pushState({ postId: id }, '', '#post/' + id); } catch(e) {}
+    document.title = loc.title + ' — ' + (currentLang === 'uk' ? 'Ім\'я Художника' : currentLang === 'en' ? 'Artist Name' : 'Künstlername');
+  }
+
+  function showBlogMain() {
+    mainContent.style.display = '';
+    document.getElementById('post-page').classList.remove('active');
+    workPage.classList.remove('active');
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    try { history.pushState({}, '', '#blog'); } catch(e) {}
+    document.title = currentLang === 'uk' ? 'Ім\'я Художника — Живопис та акварель'
+                   : currentLang === 'en' ? 'Artist Name — Painting & Watercolour'
+                   : 'Künstlername — Malerei & Aquarell';
+    setTimeout(() => {
+      const blogEl = document.getElementById('blog');
+      if (blogEl) window.scrollTo({ top: blogEl.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' });
+    }, 50);
+  }
+
+  document.getElementById('post-back').addEventListener('click', showBlogMain);
+
+  renderBlog();
+
+
+  const backBtn = document.getElementById('back-to-top');
+
+  window.addEventListener('scroll', () => {
+    backBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>
