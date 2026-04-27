@@ -1146,12 +1146,31 @@
   }
 
   /* ── RESPONSIVE ── */
+
+  /* Tablet — 900px */
   @media (max-width: 900px) {
-    nav { padding: 1.25rem 1.5rem; }
+    nav {
+      padding: 1rem 1.25rem;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .nav-logo { font-size: 1.2rem; }
+
+    .nav-links {
+      order: 3;
+      width: 100%;
+      gap: 1.25rem;
+      padding: 0.5rem 0 0.25rem;
+      border-top: 1px solid var(--border);
+      justify-content: center;
+    }
+
+    .lang-switcher { order: 2; }
 
     .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-image { height: 55vw; min-height: 280px; }
-    .hero-text { padding: 6rem 1.5rem 3rem; }
+    .hero-image { height: 60vw; min-height: 260px; }
+    .hero-text { padding: 7rem 1.5rem 3rem; }
 
     .gallery-section { padding: 5rem 1.5rem; }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
@@ -1165,12 +1184,85 @@
     .contact-section { padding: 5rem 1.5rem; }
 
     footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+
+    .work-page-inner {
+      grid-template-columns: 1fr;
+      padding: 3rem 1.5rem;
+      gap: 2rem;
+    }
+    .work-page-image { position: static; }
   }
 
-  @media (max-width: 500px) {
+  /* Mobile — 600px */
+  @media (max-width: 600px) {
+    nav { padding: 0.9rem 1rem; gap: 0.5rem; }
+
+    .nav-logo { font-size: 1.1rem; }
+
+    .nav-links {
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a { font-size: 0.65rem; letter-spacing: 0.1em; }
+
+    .lang-btn { padding: 0.3rem 0.5rem; font-size: 0.58rem; }
+
+    .hero-text { padding: 8rem 1rem 2.5rem; }
+    .hero-image { height: 65vw; min-height: 220px; }
+
+    .hero-title { font-size: clamp(2.2rem, 10vw, 3.5rem); }
+    .hero-sub { font-size: 0.9rem; }
+
+    .btn { padding: 0.8rem 1.5rem; font-size: 0.68rem; }
+    .btn-outline { margin-left: 0.6rem; }
+
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+
+    .section-title { font-size: clamp(1.6rem, 7vw, 2.5rem); }
+
+    .category-tabs { flex-wrap: wrap; justify-content: center; }
+    .tab-btn { padding: 0.6rem 1rem; font-size: 0.65rem; }
+
+    .about-stats { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .stat-num { font-size: 2rem; }
+    .stat-label { font-size: 0.6rem; }
+
+    .contact-email { font-size: clamp(1.1rem, 5vw, 1.5rem); }
+    .social-links { gap: 1.5rem; }
+
+    .about-section { padding: 4rem 1rem; }
+    .about-title { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+    .about-text { font-size: 0.9rem; }
+
+    .work-page-inner { padding: 2rem 1rem; }
+    .work-title { font-size: clamp(1.6rem, 7vw, 2.5rem); }
+    .work-details { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .work-nav { flex-direction: column; }
+
+    .post-page-inner { padding: 2rem 1rem; }
+    .post-title { font-size: clamp(1.6rem, 7vw, 2.5rem); }
+
+    .lightbox-content { max-width: 95vw; }
+
+    #back-to-top { bottom: 1.25rem; right: 1.25rem; width: 40px; height: 40px; }
+
+    .pagination { gap: 0.3rem; margin-top: 2.5rem; }
+    .page-btn { width: 34px; height: 34px; font-size: 0.72rem; }
+  }
+
+  /* Small mobile — 390px (iPhone SE, iPhone 13 mini) */
+  @media (max-width: 390px) {
+    .nav-links { gap: 0.75rem; }
+    .nav-links a { font-size: 0.6rem; }
+
     .gallery-grid { grid-template-columns: 1fr; }
-    .nav-links { gap: 1.5rem; }
-    .about-stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+
+    .hero-title { font-size: 2rem; }
+
+    .about-stats { gap: 0.5rem; }
+    .stat-num { font-size: 1.75rem; }
   }
 </style>
 </head>
@@ -1242,106 +1334,137 @@
   </div>
 
   <div class="gallery-grid">
+    <!-- TEMPLATE -->
+    <!-- <div class="gallery-item" data-id="" data-cat="" data-title="" data-year="">
+      <div class="gallery-placeholder gp-1">
+        <img class="gallery-img" src="images/arts/gallery/" alt="">
+      </div>
+      <div class="gallery-overlay"><div class="gallery-info"><h3></h3><span></span></div></div>
+    </div> -->
 
     <div class="gallery-item" data-id="w1" data-cat="watercolor" data-title="Ранковий туман" data-year="2024">
       <div class="gallery-placeholder gp-1">
-        <img class="gallery-img" src="images/arts/gallery/1_main.jpg" alt="Ранковий туман">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w1.jpg" alt="Ранковий туман">
       </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Ранковий туман</h3><span>Акварель · 2024</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="o1" data-cat="oil" data-title="Спокій осені" data-year="2023">
+    <div class="gallery-item" data-id="w2" data-cat="watercolor" data-title="Спокій осені" data-year="2023">
       <div class="gallery-placeholder gp-2">
-        <img class="gallery-img" src="images/arts/gallery/2_main.jpg" alt="Спокій осені">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w2.jpg" alt="Спокій осені">
       </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Спокій осені</h3><span>Масло · 2023</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="w2" data-cat="watercolor" data-title="Синій вечір" data-year="2024">
+    <div class="gallery-item" data-id="o1" data-cat="oil" data-title="Синій вечір" data-year="2024">
       <div class="gallery-placeholder gp-3">
-        <img class="gallery-img" src="images/arts/gallery/3_main.jpg" alt="Синій вечір">
+        <img class="gallery-img" src="images/arts/gallery/oil/o1.jpg" alt="Синій вечір">
       </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Синій вечір</h3><span>Акварель · 2024</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="g1" data-cat="graphics" data-title="Лінія та форма" data-year="2023">
+    <div class="gallery-item" data-id="w3" data-cat="watercolor" data-title="Лінія та форма" data-year="2023">
       <div class="gallery-placeholder gp-4">
-        <img class="gallery-img" src="images/arts/gallery/4_main.jpg" alt="Синій вечір">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w3.jpg" alt="Синій вечір">
       </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Лінія та форма</h3><span>Графіка · 2023</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="w3" data-cat="watercolor" data-title="Польовий етюд" data-year="2024">
+    <div class="gallery-item" data-id="g1" data-cat="graphics" data-title="Польовий етюд" data-year="2024">
       <div class="gallery-placeholder gp-5">
-        <img class="gallery-img" src="images/arts/gallery/5_main.jpg" alt="Синій вечір">
+        <img class="gallery-img" src="images/arts/gallery/graphics/g1.jpg" alt="Синій вечір">
       </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Польовий етюд</h3><span>Акварель · 2024</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="o2" data-cat="oil" data-title="Теплий берег" data-year="2022">
+    <div class="gallery-item" data-id="w4" data-cat="watercolor" data-title="Теплий берег" data-year="2022">
       <div class="gallery-placeholder gp-6">
-        <img class="gallery-img" src="images/arts/gallery/6_main.jpg" alt="Синій вечір">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w4.jpg" alt="Синій вечір">
       </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Теплий берег</h3><span>Масло · 2022</span></div></div>
     </div>
 
     <div class="gallery-item" data-id="e1" data-cat="other" data-title="Абстракція №7" data-year="2024">
-      <div class="gallery-placeholder gp-7"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+      <div class="gallery-placeholder gp-7">
+        <img class="gallery-img" src="images/arts/gallery/etc/e1.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Абстракція №7</h3><span>Інше · 2024</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="g2" data-cat="graphics" data-title="Портрет у штрихах" data-year="2023">
-      <div class="gallery-placeholder gp-8"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="w5" data-cat="watercolor" data-title="Портрет у штрихах" data-year="2023">
+      <div class="gallery-placeholder gp-8">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w5.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Портрет у штрихах</h3><span>Графіка · 2023</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="w4" data-cat="watercolor" data-title="Дощ на склі" data-year="2025">
-      <div class="gallery-placeholder gp-9"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="w6" data-cat="watercolor" data-title="Дощ на склі" data-year="2025">
+      <div class="gallery-placeholder gp-9">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w6.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Дощ на склі</h3><span>Акварель · 2025</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="w5" data-cat="watercolor" data-title="Весняний сад" data-year="2025">
-      <div class="gallery-placeholder gp-2"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="w7" data-cat="watercolor" data-title="Весняний сад" data-year="2025">
+      <div class="gallery-placeholder gp-2">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w7.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Весняний сад</h3><span>Акварель · 2025</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="o3" data-cat="oil" data-title="Захід над полем" data-year="2023">
-      <div class="gallery-placeholder gp-5"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="w8" data-cat="watercolor" data-title="Захід над полем" data-year="2023">
+      <div class="gallery-placeholder gp-5">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w8.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Захід над полем</h3><span>Масло · 2023</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="g3" data-cat="graphics" data-title="Місто у контурах" data-year="2022">
-      <div class="gallery-placeholder gp-7"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="w9" data-cat="watercolor" data-title="Місто у контурах" data-year="2022">
+      <div class="gallery-placeholder gp-7">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w9.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Місто у контурах</h3><span>Графіка · 2022</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="w6" data-cat="watercolor" data-title="Озеро на світанку" data-year="2024">
-      <div class="gallery-placeholder gp-4"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="o2" data-cat="oil" data-title="Озеро на світанку" data-year="2024">
+      <div class="gallery-placeholder gp-4">
+        <img class="gallery-img" src="images/arts/gallery/oil/o2.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Озеро на світанку</h3><span>Акварель · 2024</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="e2" data-cat="other" data-title="Колаж №3" data-year="2023">
-      <div class="gallery-placeholder gp-1"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="w10" data-cat="watercolor" data-title="Колаж №3" data-year="2023">
+      <div class="gallery-placeholder gp-1">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w10.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Колаж №3</h3><span>Інше · 2023</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="o4" data-cat="oil" data-title="Зимовий ліс" data-year="2022">
-      <div class="gallery-placeholder gp-6"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="w11" data-cat="watercolor" data-title="Зимовий ліс" data-year="2022">
+      <div class="gallery-placeholder gp-6">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w11.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Зимовий ліс</h3><span>Масло · 2022</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="w7" data-cat="watercolor" data-title="Польові квіти" data-year="2025">
-      <div class="gallery-placeholder gp-9"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="w12" data-cat="watercolor" data-title="Польові квіти" data-year="2025">
+      <div class="gallery-placeholder gp-9">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w12.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Польові квіти</h3><span>Акварель · 2025</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="g4" data-cat="graphics" data-title="Тінь та об'єм" data-year="2024">
-      <div class="gallery-placeholder gp-3"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="w13" data-cat="watercolor" data-title="Тінь та об'єм" data-year="2024">
+      <div class="gallery-placeholder gp-3">
+        <img class="gallery-img" src="images/arts/gallery/watercolor/w13.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Тінь та об'єм</h3><span>Графіка · 2024</span></div></div>
     </div>
 
-    <div class="gallery-item" data-id="e3" data-cat="other" data-title="Текстура №12" data-year="2025">
-      <div class="gallery-placeholder gp-8"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="1" stroke="#4A4540" stroke-width="1" fill="none"/><path d="M4 25 L14 15 L22 23 L28 17 L36 25" stroke="#4A4540" stroke-width="1" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#4A4540" stroke-width="1" fill="none"/></svg></div>
+    <div class="gallery-item" data-id="g2" data-cat="graphics" data-title="Текстура №12" data-year="2025">
+      <div class="gallery-placeholder gp-8">
+        <img class="gallery-img" src="images/arts/gallery/graphics/g2.jpg" alt="Синій вечір">
+      </div>
       <div class="gallery-overlay"><div class="gallery-info"><h3>Текстура №12</h3><span>Інше · 2025</span></div></div>
     </div>
 
@@ -1358,7 +1481,7 @@
     <div class="about-image-wrap">
       <div class="about-placeholder">
         <!-- Замініть на <img src="about.jpg" alt="Ваше фото"> -->
-         <img class="about-img" src="images/pages/pages_about.jpg" alt="Ваше фото">
+         <img class="about-img" src="images/pages/pages_about_2.jpg" alt="Ваше фото">
       </div>
       <div class="about-accent-line"></div>
     </div>
